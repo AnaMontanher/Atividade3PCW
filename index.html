@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - MARATONA DE PROGRAMAÇÃO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+    <header>
+        <p class="titulo">18ª MARATONA DE PROGRAMAÇÃO</p>
+    </header>
+    <div class="conteiner">
+        <div class="box">
+            <h2>INFORMAÇÕES</h2>
+            <div class="imagem">
+                <figure>
+                    <img src="laboratorio.jpeg" alt="Laboratório da FIPP"><br />
+                    <caption>Alunos no laboratório da FIPP na última edição da maratona.</caption>
+                </figure>
+            </div>
+            <section>
+                <p> A 18ª Maratona de Programação da Faculdade de Informática de Presidente
+                    Prudente é um evento interno realizado nos laboratórios de informática da FIPP. Este evento
+                    contribui para a integração dos alunos num torneio que envolve habilidade, raciocínio e muito
+                    trabalho em equipe. Além do fator competitivo, este torneio visa estimular os alunos a
+                    participar de eventos similares a nível nacional realizados anualmente, como a Maratona de
+                    Programação, promovida pela SBC - Sociedade Brasileira de Computação.</p>
+                <p><span>Data:</span>30/10/2024.</p>
+                <p><span>Local:</span>Laboratórios da FIPP - Campus I da UNOESTE, Bloco H.</p>
+                <p><span>Público-alvo:</span>Alunos regularmente matriculados nos cursos da FIPP.</p>
+            </section>
+        </div>
+        <div class="box">
+            <h2>CURIOSIDADE</h2>
+            <section>
+                <p>Confira esta matéria que mostra novos campos de preenchimento para formulários no HTML5 que
+                    possibilitam
+                    mais usabilidade para o usuário:</p>
+                <a href="https://desenvolvimentoparaweb.com/html/html5-inputs-novos-tipos-campos/" target="_blank">Novos
+                    tipos de
+                    <span>inputs</span> no HTML5.</a>
+            </section>
+        </div>
+        <div class="box">
+            <h2>INSCRIÇÃO</h2>
+            <section>
+                <form action="formulario.jsp" name="FCad" method="post">
+                    <label for="tcpf">CPF:</label>
+                    <input type="text" name="tcpf" placeholder="Digite seu CPF" required="required" size="30"
+                        maxlength="11" /><br />
+                    <label for="tnome">Nome Completo:</label>
+                    <input type="text" name="tnome" placeholder="Digite seu nome completo" required="required" size="40"
+                        maxlength="35" /><br />
+                    <label for="tfone">Telefone(Whatsapp):</label>
+                    <input type="tel" id="tfone" pattern="\(\d{2}\)\s\d{5}-\d{4}" required="required"
+                        placeholder="(XX) XXXXX-XXXX" size="30" maxlength="15" /><br />
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Digite seu endereço de e-mail" size="40"
+                        maxlength="30" /><br />
+                    <label for="dnasc" id="datanasc">Data de Nascimento:</label>
+                    <input type="date"><br />
+                    <label for="necesp">Possui necessidades especiais?</label>
+                    <select name="necesp">
+                        <option value=" "></option>
+                        <option value="1">Sim</option>
+                        <option value="2">Não</option>
+                    </select><br />
+                    <label for="descr">Descreva a adaptação, se necessária:</label><br />
+                    <textarea id="descr" cols="50" rows="12"></textarea><br/>
+                    <label for="listcurso">Curso Matriculado</label><br />
+                    <select name="listcurso">
+                        <option value="1">ADS</option>
+                        <option value="2">Ciências da Computação</option>
+                        <option value="3">Data Science</option>
+                        <option value="4">Desenvolvimento de Aplicações para web</option>
+                        <option value="5">Gestão da Tecnologia da Informação</option>
+                        <option value="6">Jogos Digitais</option>
+                        <option value="7">Redes de Computadores</option>
+                        <option value="8">Segurança da Informação</option>
+                        <option value="9">Sistemas da Informação</option>
+                    </select><br />
+                    <label for="modal">Modalidade</label><br />
+                    <input type="radio" name="modal" value="1" checked="checked" />Presencial<br />
+                    <input type="radio" name="modal" value="1" />Ensino à distância-EAD<br />
+                    <input type="radio" name="modal" value="1" />Híbrido<br />
+                    <label for="obs">Observações/Sugestões:</label><br />
+                    <textarea id="descr" cols="50" rows="12"></textarea>
+                    <br />
+                    <label for="quest">Qual a sua linguagem de programação preferida?</label><br/>
+                    <input type="checkbox" name="op1" id="op1" value="phyton">
+                    <label for="options">Python</label><br/>
+                    <input type="checkbox" name="op2" id="op2" value="JS">
+                    <label for="options">JavaScript</label><br/>
+                    <input type="checkbox" name="op3" id="op3" value="C">
+                    <label for="options">#C</label><br/>    
+                    <input type="submit" id="benviar" value="Enviar"
+                        onsubmit="alert('Cadastro realizado com sucesso!!!')" />
+                </form>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
